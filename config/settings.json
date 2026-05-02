@@ -1,0 +1,138 @@
+{
+    "projects": {
+        "ArenaShooter": {
+            "additionalDependencies": [
+                "mfplat.lib",
+                "mf.lib",
+                "mfreadwrite.lib",
+                "mfuuid.lib",
+                "xapobase.lib",
+                "winmm.lib"
+		],
+            "additionalIncludeDirectories": [],
+            "additionalLibraryDirectories": [],
+            "dependencies": [
+		    "Core",
+                "Engine",
+                "Render",
+                "Audio"
+            ],
+            "dependents": [],
+            "guid": "24F854A6-6EA0-6F17-6633-2C4D58E212E5",
+            "lib": false,
+            "pch": false,
+            "preprocessorDefinitions": [],
+            "vcpkg": false,
+            "window": true
+        },
+        "Audio": {
+            "additionalDependencies": [
+                "mfplat.lib",
+                "mf.lib",
+                "mfreadwrite.lib",
+                "mfuuid.lib",
+                "xapobase.lib"
+            ],
+            "additionalIncludeDirectories": [],
+            "additionalLibraryDirectories": [],
+            "dependencies": [
+                "Core"
+            ],
+            "dependents": [
+                "Testing",
+                "ArenaShooter"
+            ],
+            "guid": "350F391D-4BFF-5BAA-2368-38E07F916E9D",
+            "lib": true,
+            "pch": false,
+            "preprocessorDefinitions": [],
+            "vcpkg": false,
+            "window": false
+        },
+        "Core": {
+            "additionalDependencies": [],
+            "additionalIncludeDirectories": [],
+            "additionalLibraryDirectories": [],
+            "dependencies": [],
+            "dependents": [
+                "Engine",
+                "Render",
+                "Testing",
+                "Audio",
+		    "ArenaShooter"
+            ],
+            "guid": "3DB4233D-2C57-5DD7-351C-357205B03623",
+            "lib": true,
+            "pch": false,
+            "preprocessorDefinitions": [],
+            "vcpkg": false,
+            "window": false
+        },
+        "Engine": {
+            "additionalDependencies": [],
+            "additionalIncludeDirectories": [],
+            "additionalLibraryDirectories": [],
+            "dependencies": [
+                "Render",
+                "Core"
+            ],
+            "dependents": [
+                "Testing",
+                "ArenaShooter"
+            ],
+            "guid": "2CAB3050-4A42-7B7C-618A-1D594E734246",
+            "lib": true,
+            "pch": true,
+            "preprocessorDefinitions": [],
+            "vcpkg": false,
+            "window": false
+        },
+        "Render": {
+            "additionalDependencies": [],
+            "additionalIncludeDirectories": [],
+            "additionalLibraryDirectories": [],
+            "dependencies": [
+                "Core"
+            ],
+            "dependents": [
+                "Engine",
+                "Testing",
+                "ArenaShooter"
+            ],
+            "guid": "606C2531-5AD3-1D47-1E4E-2AC35CB96F06",
+            "lib": true,
+            "pch": true,
+            "preprocessorDefinitions": [],
+            "vcpkg": false,
+            "window": false
+        },
+        "Testing": {
+            "additionalDependencies": [
+                "winmm.lib",
+                "mfplat.lib",
+                "mfreadwrite.lib",
+                "mf.lib",
+                "mfuuid.lib"
+            ],
+            "additionalIncludeDirectories": [],
+            "additionalLibraryDirectories": [],
+            "dependencies": [
+                "Engine",
+                "Render",
+                "Core",
+                "Audio"
+            ],
+            "dependents": [],
+            "guid": "10511904-4DE1-0D58-13FA-537173A22D42",
+            "lib": false,
+            "pch": false,
+            "preprocessorDefinitions": [],
+            "vcpkg": false,
+            "window": true
+        }
+    },
+    "solution_guid": "2C2F74D8-6E8C-0796-6679-5679007174CA",
+    "solution_name": "GCEngine",
+    "startup_project": "Testing",
+    "version": "1.17.4"
+}

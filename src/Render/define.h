@@ -1,0 +1,16 @@
+﻿#ifndef RENDER_DEFINE_H_INCLUDED
+#define RENDER_DEFINE_H_INCLUDED
+
+
+#include "Core/define.h"
+
+enum DDSAlphaMode
+{
+    DDS_ALPHA_MODE_UNKNOWN = 0,
+    DDS_ALPHA_MODE_STRAIGHT = 1,
+    DDS_ALPHA_MODE_PREMULTIPLIED = 2,
+    DDS_ALPHA_MODE_OPAQUE = 3,
+    DDS_ALPHA_MODE_CUSTOM = 4,
+};
+
+#endif
